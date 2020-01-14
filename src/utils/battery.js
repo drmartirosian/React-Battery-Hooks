@@ -46,5 +46,5 @@ export function register(callback) {
 
 export function unregister(callback) {
   let idx = observerCallbacks.indexOf(callback);
-  if (idx !== -1) observerCallbacks.slice(idx, 1);
+  if (idx !== -1) observerCallbacks.splice(idx, 1);
 }
