@@ -11,11 +11,9 @@ class BatteryContainer extends Component {
 	updateBattery = ({level, charging}) => {
 		this.setState({level, charging});
 	}
-
 	componentDidMount() {
     register(this.updateBattery);
 	}
-  
 	componentWillUnmount() {
     unregister(this.updateBattery);
 	}
